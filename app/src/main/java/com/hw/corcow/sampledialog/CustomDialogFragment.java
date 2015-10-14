@@ -53,7 +53,7 @@ public class CustomDialogFragment extends DialogFragment {
         // d.setTitle("Dialog Test");
 
 
-        // 위치변경
+        // ** Dialog 위치변경 **
         WindowManager.LayoutParams params = dlg.getWindow().getAttributes();
         params.gravity = Gravity.LEFT | Gravity.TOP;
         params.x = 300;

@@ -27,7 +27,8 @@
         android:id="@+id/btn_list"
         android:layout_below="@+id/btn_dialog"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onListDialog" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
         android:id="@+id/btn_single"
         android:layout_below="@+id/btn_list"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onSingleChoiceDialog" />
 
     <Button
         android:layout_width="wrap_content"
@@ -45,7 +47,8 @@
         android:id="@+id/btn_multiple"
         android:layout_below="@+id/btn_single"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onMultipleChoiceDialog" />
 
     <Button
         android:layout_width="wrap_content"
@@ -54,7 +57,8 @@
         android:id="@+id/btn_progress_spinner"
         android:layout_below="@+id/btn_multiple"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onProgressSpinnerDialog" />
 
     <Button
         android:layout_width="wrap_content"
@@ -63,5 +67,26 @@
         android:id="@+id/btn_progress_horizontal"
         android:layout_below="@+id/btn_progress_spinner"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onProgressHorizontalDialog" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog Fragment"
+        android:id="@+id/btn_dialog_fragment"
+        android:layout_below="@+id/btn_progress_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onDialogFragment" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:id="@+id/button"
+        android:layout_below="@+id/btn_dialog_fragment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onCustomDialog" />
 </RelativeLayout>
