@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setIcon(android.R.drawable.ic_dialog_alert);
                 builder.setTitle("Multiple Choice Dialog");
-                final boolean[] mSelected = new boolean[] {false, true, true};
+                final boolean[] mSelected = new boolean[] {false, true, true, false};
                 builder.setMultiChoiceItems(list, mSelected, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
